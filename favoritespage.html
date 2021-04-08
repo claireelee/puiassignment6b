@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"> 
+    <head>
+        <title>Bun Bun Bake Shop</title> <!-- website title, importing stylesheet and font -->
+        <link rel="stylesheet" href="bakerystyle.css">
+        <link rel="icon" href="images/logo.png">
+        <script src="https://kit.fontawesome.com/f569ccc368.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="navcontainer">  <!-- navigation bar -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Bun Bun Bake Shop Logo"></a>
+                </div>
+                <div class="currentnavbutton">
+                    <a href="orderpage.html">Order</a>
+                </div>
+                <div class="navbutton">
+                    <a>Locations</a>
+                </div>
+                <div class="navbutton">
+                    <a>Account</a>
+                </div>
+                <div class="cart">
+                    <a href="cartpage.html"><p id="clickcount">Cart (0)</p></a>
+                </div>
+            </div>
+        </div> 
+
+        <div class="subnavbar">  <!-- sub-navigation bar for order page -->
+            <div class="navbutton">
+                <a href="orderpage.html">New Order</a>
+            </div>
+            <div class="navbutton">
+                <a>Previous Orders</a>
+            </div>
+            <div class="currentnavbutton">
+                <a href="favoritespage.html">Favorites</a>
+            </div>
+        </div><br><br>
+
+        <div class="content">
+            <h1>Your Favorite Items</h1>
+
+            <div class="selectionbox">  <!-- container for all favorite items -->
+                <div class="favoriteitems">  <!-- container for favorite item attributes -->
+                    <div class="favoritepicture">
+                        <img src="images/selectionpic.png" alt="Product photo">
+                    </div>
+                    <div class="favoritetext">
+                        <div class="text">
+                            <b>Original Cinnamon Roll</b><br>
+                            Sugar Milk, 6pcs<br>
+                        </div>
+                    </div>
+                    <div class="favoriteicon">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="favoritebutton">
+                        &nbsp; &nbsp; &nbsp;
+                        <div class="smallbutton" onclick="addCartClick() ">
+                            Add to Cart
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="favoriteitems">
+                    <div class="favoritepicture">
+                        <img src="images/selectionpic.png" alt="Product photo">
+                    </div>
+                    <div class="favoritetext">
+                        <div class="text">
+                            <b>Original Cinnamon Roll</b><br>
+                            Vanilla Milk, 3pcs<br>
+                        </div>
+                    </div>
+                    <div class="favoriteicon">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="favoritebutton">
+                        &nbsp; &nbsp; &nbsp;
+                        <div class="smallbutton" onclick="addCartClick() ">
+                            Add to Cart
+                        </div>
+                    </div>
+                </div>
+
+                <div class="favoriteitems">
+                    <div class="favoritepicture">
+                        <img src="images/selectionpic.png" alt="Product photo">
+                    </div>
+                    <div class="favoritetext">
+                        <div class="text">
+                            <b>Walnut Cinnamon Roll</b><br>
+                            Vanilla Milk, 3pcs<br>
+                        </div>
+                    </div>
+                    <div class="favoriteicon">
+                        <div class="icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="favoritebutton">
+                        &nbsp; &nbsp; &nbsp;
+                        <div class="smallbutton" onclick="addCartClick() ">
+                            Add to Cart
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
